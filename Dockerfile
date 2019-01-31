@@ -25,6 +25,6 @@ RUN mkdir /haraka && \
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
-
+USER haraka
 
 ENTRYPOINT ["/run.sh"]
